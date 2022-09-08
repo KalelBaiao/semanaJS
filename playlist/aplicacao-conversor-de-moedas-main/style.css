@@ -1,15 +1,95 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #F9FAFC;
+  height: 100vh;
+  width: 100vw;
 }
 
-.container {
-  padding-top: 7.5rem;
+main{
+  display: flex;
+  background-color: #222020;
+  height: 100vh;
+  min-height: 600px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.converted-value {
-  color: #452B4E;
+section{
+  background-color: #F9FAFC;
+  height: 95vh;
+  min-height: 500px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 20px;
 }
-
-.conversion-precision {
-  color: #452B4E;
+.imagem{
+  text-align: center;
+}
+.imagem img{
+  height: 200px;
+  margin: 30px;
+}
+.container-select{
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.div-select1{
+  display: flex;
+  justify-content: end;
+}
+.div-select2{
+  display: flex;
+  justify-content: start;
+}
+select, input{
+  width: 60%;
+  padding: 7px;
+  margin: 10px;
+  border-radius: 7px;
+  font-size: 1.1em;
+  border: transparent 2px solid;
+}
+select:hover, select:focus, input:hover, input:focus{
+  border: #37005e 2px solid;
+}
+.valor{
+  display: flex;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.input-numero{
+  display: flex;
+  justify-content: end;
+  height: 70px;
+  font-size: 1.2em;
+}
+input{
+  width: 40%;
+}
+.valor-convertido{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 3em;
+}
+p{
+  color: rgba(0, 0, 0, 0.9);
+}
+.valor-preciso{
+  text-align: center;
+  font-size: 1.3em;
 }
