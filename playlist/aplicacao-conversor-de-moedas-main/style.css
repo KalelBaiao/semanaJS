@@ -65,7 +65,6 @@ select:hover, select:focus, input:hover, input:focus{
   border: #37005e 2px solid;
 }
 .valor{
-  display: flex;
   width: 100%;
   display: grid;
   gap: 20px;
