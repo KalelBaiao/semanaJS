@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: helvetica, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+body{
+    /* background-image: url('../img/bg.jpg'); */
+    /* background: linear-gradient(to right, #c5e6ec, #efbbe6); */
+    background: linear-gradient(to left, #afffa5,#d5ffcf, #d5ffcf, #bbedef);
+    background-position: left center;
+    background-size: 200% 200%;
+    height: 100vh;
+    animation: back 10s linear infinite;
+}
+@keyframes back {
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 50% 100%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+}
+button{
+    background-color: #fdfdfd;
+    color: limegreen;
+    border: 2px solid limegreen;
+    padding: .3rem .6rem;
+    border-radius: .4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+input, select{
+    border-radius: .4rem;
+    border: 2px solid limegreen;
+}
+button:hover {
+    background-color: limegreen;
+    color: #fff;
+}
+button:hover > i{
+    color: #fff;
+}
+
+button i{
+    color: limegreen;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input, select{
+    padding: .25rem .5rem;
+}
+.hide{
+    display: none;
+}
+
+.todo-container{
+    max-width: 500px;
+    margin: 3rem auto;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form p, #edit-form p{
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.form-control{
+    display: flex;
+}
+
+.form-control input{
+    margin-right: .3rem;
+}
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+}
+
+
+#toolbar{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+#toolbar h4{
+    margin-bottom: .5rem;
+}
+
+#search{
+    border-right: 1px solid #ddd ;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form{
+    display: flex;
+}
+
+#search input{
+    width: 100%;
+    margin-right: .3rem;
+    transition: 1s;
+}
+
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select{
+    flex: 1;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+    border-radius: .8rem;
+    margin-bottom: .3rem;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+.todo h3{
+    flex: 1;
+    font-size: .9rem;
+}
+.todo button{
+    margin-left: .3rem;
+}
+
+.done{
+    background-color: rgb(0, 173, 0);
+}
+.done h3{
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
