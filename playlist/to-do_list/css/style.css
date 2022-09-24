@@ -61,9 +61,6 @@ button i{
 input, select{
     padding: .25rem .5rem;
 }
-.hide{
-    display: none;
-}
 
 .todo-container{
     max-width: 500px;
@@ -102,13 +99,13 @@ input, select{
 }
 
 
-#toolbar{
+.toolbar{
     padding: 1rem;
     border-bottom: 1px solid #ccc;
     display: flex;
 }
 
-#toolbar h4{
+.toolbar h4{
     margin-bottom: .5rem;
 }
 
@@ -168,4 +165,7 @@ input, select{
     color: #fff;
     text-decoration: line-through;
     font-style: italic;
+}
+.hide{
+    display: none;
 }

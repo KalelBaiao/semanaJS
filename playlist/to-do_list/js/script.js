@@ -7,7 +7,7 @@ const cancelEditBtn = document.querySelector("#cancel-edit-btn");
 const searchInput = document.querySelector("#search-input");
 const eraseBtn = document.querySelector("#erase-button");
 const filterBtn = document.querySelector("#filter-select");
-const toolbar = document.querySelector("#toolbar");
+const toolbar = document.querySelector(".toolbar");
 let oldInputValue;
 
 // Funções
@@ -52,7 +52,8 @@ const toggleForms = () => {
     editForm.classList.toggle("hide");
     todoForm.classList.toggle("hide");
     //   todoList.classList.toggle("hide");
-    // toolbar.style.display = "none";
+    toolbar.classList.toggle("hide");
+    
 };
 
 const updateTodo = (text) => {
