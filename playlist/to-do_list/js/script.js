@@ -51,7 +51,7 @@ const saveTodo = (text, done = 0, save = 1) => {
 const toggleForms = () => {
     editForm.classList.toggle("hide");
     todoForm.classList.toggle("hide");
-    //   todoList.classList.toggle("hide");
+    todoList.classList.toggle("hide");
     toolbar.classList.toggle("hide");
     
 };
@@ -78,8 +78,6 @@ const getSearchedTodos = (search) => {
         const todoTitle = todo.querySelector("h3").innerText.toLowerCase();
 
         todo.style.display = "flex";
-
-        console.log(todoTitle);
 
         if (!todoTitle.includes(search)) {
             todo.style.display = "none";
